@@ -1,6 +1,7 @@
 const express = require("express")
+const { PORT } = require("./config/serverConfig.js")
 const app = express();
 
-app.listen(3000, () => {
-    console.log("Server for ecommerce is up")
+app.listen(PORT, () => {
+    console.log(`Server for ecommerce is up ${PORT}`)
 })
